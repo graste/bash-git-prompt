@@ -18,6 +18,8 @@ Means:
 - awesome git status information
 - current path
 
+I suggest to use ``PROMPT_DIRTRIM=3`` in ``~/.bashrc`` to shorten too long paths a bit (if those long prompts frighten you). This trims paths nicely to 3 levels.
+
 ## Install
 
 1. Download the ``~/.bash/`` files.
