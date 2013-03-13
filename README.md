@@ -7,16 +7,15 @@ In particular the branch name, difference with remote branch, number of files st
 
 (an original idea from this [blog post][]).
 
-## Examples
+## Install
 
-The prompt may look like the following: 
+1. Download the ``~/.bash/`` files.
+1. Source the file ``gitprompt.sh`` from your ``~/.bashrc`` config file (via `` . /path/to/gitprompt.sh`` or ``source /path/to/gitprompt.sh``)
+1. Optionally configure your prompt in ``~/.bash/gitprompt.sh``. Easiest way is to set the variables PROMPT\_START and PROMPT\_END.
+1. You may also redefine the function ``setGitPrompt`` to adapt it to your needs (to change the order in which the information is displayed).
+1. Go in a git repository and test it!
 
-* ``(master↑3|✚1)``: on branch ``master``, ahead of remote by 3 commits, 1 file changed but not staged
-* ``(status|●2)``: on branch ``status``, 2 files staged
-* ``(master|✚7…)``: on branch ``master``, 7 files changed, some files untracked
-* ``(master|✖2✚3)``: on branch ``master``, 2 conflicts, 3 files changed
-* ``(experimental↓2↑3|✔)``: on branch ``experimental``; your branch has diverged by 3 commits, remote by 2 commits; the repository is otherwise clean
-* ``(:70c2952|✔)``: not on any branch; parent commit has hash ``70c2952``; the repository is otherwise clean
+**Enjoy!**
 
 ##  Prompt Structure
 
@@ -39,14 +38,15 @@ The symbols are as follows:
 - Branch Symbol:<br />
   	When the branch name starts with a colon ``:``, it means it's actually a hash, not a branch (although it should be pretty clear, unless you name your branches like hashes :-)
 
-## Install
+## Examples
 
-1. Download the ``~/.bash/`` files.
-1. Source the file ``gitprompt.sh`` from your ``~/.bashrc`` config file
-1. Optionally configure your prompt in ``~/.bash/gitprompt.sh``. Easiest way is to set the variables PROMPT\_START and PROMPT\_END.
-1. You may also redefine the function ``setGitPrompt`` to adapt it to your needs (to change the order in which the information is displayed).
-1. Go in a git repository and test it!
+The prompt may look like the following: 
 
-**Enjoy!**
+* ``(master↑3|✚1)``: on branch ``master``, ahead of remote by 3 commits, 1 file changed but not staged
+* ``(status|●2)``: on branch ``status``, 2 files staged
+* ``(master|✚7…)``: on branch ``master``, 7 files changed, some files untracked
+* ``(master|✖2✚3)``: on branch ``master``, 2 conflicts, 3 files changed
+* ``(experimental↓2↑3|✔)``: on branch ``experimental``; your branch has diverged by 3 commits, remote by 2 commits; the repository is otherwise clean
+* ``(:70c2952|✔)``: not on any branch; parent commit has hash ``70c2952``; the repository is otherwise clean
 
 [blog post]: http://sebastiancelis.com/2009/nov/16/zsh-prompt-git-users/
