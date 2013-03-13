@@ -41,9 +41,9 @@ The symbols are as follows:
 
 ## Install
 
-1. Create the directory ``~/.bash`` if it does not exist (this location is customizable).
-1. Move the file ``gitstatus.py`` into ``~/.bash/``.
-1. Source the file ``gitprompt.sh`` from your ``~/.bashrc`` config file, and, configure your prompt in ``~/.bash/gitprompt.sh``. For this you have to set the variables PROMPT\_START and PROMPT\_END.
+1. Download the ``~/.bash/`` files.
+1. Source the file ``gitprompt.sh`` from your ``~/.bashrc`` config file
+1. Optionally configure your prompt in ``~/.bash/gitprompt.sh``. Easiest way is to set the variables PROMPT\_START and PROMPT\_END.
 1. You may also redefine the function ``setGitPrompt`` to adapt it to your needs (to change the order in which the information is displayed).
 1. Go in a git repository and test it!
 
