@@ -7,6 +7,17 @@ In particular the branch name, difference with remote branch, number of files st
 
 (an original idea from this [blog post][]).
 
+The prompt in this repository looks like this atm:
+``# 10:19:42 1045 0 (master ↑·2|● 3✚ 1…1) ~/projects/puppets $ ``
+
+Means:
+- ``#`` to prevent accidental execution of copy-pasted prompts
+- current time including seconds to see execution time of commands
+- history entry id for laster reference/reuse
+- last command shell exit code
+- awesome git status information
+- current path
+
 ## Install
 
 1. Download the ``~/.bash/`` files.
